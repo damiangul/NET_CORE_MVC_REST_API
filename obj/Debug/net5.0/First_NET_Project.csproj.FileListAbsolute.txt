@@ -59,3 +59,5 @@ C:\Users\damia\Desktop\First_NET_Project\bin\Debug\net5.0\runtimes\win-x86\nativ
 C:\Users\damia\Desktop\First_NET_Project\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\damia\Desktop\First_NET_Project\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\damia\Desktop\First_NET_Project\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\damia\Desktop\First_NET_Project\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\damia\Desktop\First_NET_Project\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

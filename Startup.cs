@@ -36,7 +36,9 @@ namespace First_NET_Project
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "First_NET_Project", Version = "v1" });
             });
 
-            //services.AddScoped<ICommanderRepo, MockCommanderRepo>();
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+            //services.AddScoped<ICommanderRepo, MockCommanderRepo>(); To jest stara werja
             services.AddScoped<ICommanderRepo, SqlCommanderRepo>();
         }
 
