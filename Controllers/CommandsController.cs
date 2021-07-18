@@ -34,7 +34,7 @@ namespace First_NET_Project.Controllers
     }
 
     //GET api/commands/{id} etc...
-    [HttpGet("{id}")]
+    [HttpGet("{id}", Name = "GetCommandById")]
     public ActionResult <CommandReadDto> GetCommandById(int id)
     {
       var commandItem = _repository.GetCommandById(id);
@@ -45,6 +45,20 @@ namespace First_NET_Project.Controllers
       }
 
       return NotFound();
+    }
+
+    //POST api/commands
+    [HttpPost]
+    public ActionResult <CommandReadDto> CreateCommand(CommandCreateDto commandCreateDto) 
+    {
+      var commandModel = _mapper.Map<Command>(commandCreateDto);
+      _repository.CreateCommand(commandModel);
+      _repository.SaveChanges();
+
+      //Dodalismy zmienna typu Command do bazy a dla uzytkownika wyswietlamy model CommandReadDto.
+      var commandReadDto = _mapper.Map<CommandReadDto>(commandModel);
+
+      return CreatedAtRoute(nameof(GetCommandById), new {Id = commandReadDto.Id}, commandReadDto);
     }
   }
 }

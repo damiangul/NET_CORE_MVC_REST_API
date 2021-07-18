@@ -8,7 +8,10 @@ namespace First_NET_Project.Profiles
   {
     public CommandsProfile()
     {
+        //Source -> Target PAMIETAJ
         CreateMap<Command, CommandReadDto>();
+        //Tutaj wazne co do czego pamietaj!
+        CreateMap<CommandCreateDto, Command>();
     }
   }
 }
