@@ -11,6 +11,11 @@ namespace First_NET_Project.Data
       throw new System.NotImplementedException();
     }
 
+    public void DeleteCommand(Command cmd)
+    {
+      throw new System.NotImplementedException();
+    }
+
     public IEnumerable<Command> GetAllCommands()
     {
       var commands = new List<Command>
@@ -29,6 +34,11 @@ namespace First_NET_Project.Data
     }
 
     public bool SaveChanges()
+    {
+      throw new System.NotImplementedException();
+    }
+
+    public void UpdateCommand(Command cmd)
     {
       throw new System.NotImplementedException();
     }

@@ -24,6 +24,16 @@ namespace First_NET_Project.Data
       _context.Commands.Add(cmd);
     }
 
+    public void DeleteCommand(Command cmd)
+    {
+      if(cmd == null)
+      {
+        throw new ArgumentNullException(nameof(cmd));
+      }
+
+      _context.Commands.Remove(cmd);
+    }
+
     public IEnumerable<Command> GetAllCommands()
     {
       return _context.Commands.ToList();
@@ -38,6 +48,11 @@ namespace First_NET_Project.Data
     {
       //Gdy robimy creaty, delete czy update to musi być wywolana poniższa komenda aby zmiany zostały zapisane.
       return (_context.SaveChanges() >= 0);
+    }
+
+    public void UpdateCommand(Command cmd)
+    {
+      //Nic nie dajesz. Nie musisz implementować.
     }
   }
 }

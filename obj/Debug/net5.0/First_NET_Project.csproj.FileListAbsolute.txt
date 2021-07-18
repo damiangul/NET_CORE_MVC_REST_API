@@ -61,3 +61,6 @@ C:\Users\damia\Desktop\First_NET_Project\bin\Debug\net5.0\runtimes\win\lib\netst
 C:\Users\damia\Desktop\First_NET_Project\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\damia\Desktop\First_NET_Project\bin\Debug\net5.0\AutoMapper.dll
 C:\Users\damia\Desktop\First_NET_Project\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\damia\Desktop\First_NET_Project\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\damia\Desktop\First_NET_Project\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\damia\Desktop\First_NET_Project\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
